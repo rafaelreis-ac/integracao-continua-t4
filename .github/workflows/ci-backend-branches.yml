@@ -1,21 +1,3 @@
-name: CI Back-end Branches
-
-on: 
-  push: 
-    branches: 
-      - '**'
-      - '!main'
-    paths: 
-      - 'sgcmapi/**'
-
-permissions: 
-  contents: write
-
-jobs: 
-
-  main: 
-    name: CI Workflow Main
-    uses: ./.github/workflows/ci-backend.yml
 
   merge: 
     needs: main 
